@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap">
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+    <title>LA PARFUMANIA</title>
+</head>
+
+<body>
+    <div class="bigcontainer">
+        <div class="d-flex justify-content-md-between align-items-center mt-3 w-100 flex-column flex-md-row shop-intro">
+            <div class="ms-5 input-group-sm input-group me-md-2 mb-2"
+                style="width: 15rem; border: solid 1px; border-radius: 5px; height: 3rem;">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon1"
+                    style="border: none;"><i class="bi bi-search"></i></button>
+                <input type="text" class="form-control" placeholder="Tìm kiếm"
+                    aria-label="Example text with button addon" aria-describedby="button-addon1"
+                    style="border: none !important;">
+            </div>
+            <div class="me-md-2 mb-2">
+                <img src="/images/logo.png" width="300">
+            </div>
+            <div class="me-5 mb-md-0 mb-3 d-flex align-item-center justify-content-center extention">
+                <a class="cart p-0 ps-3 pe-3" href="/html/user-info.html" style="border-radius: 20px;"><i class="bi bi-person"
+                    style="font-size:xx-large; color: #000000;"></i></a>
+                <a class="cart p-0 ps-3 pe-3" href="/html/cart.html" style="border-radius: 20px;"><i class="bi bi-cart3"
+                    style="font-size:xx-large; color: #000000;"></i></a>
+                <a class="sign p-0 ps-3 pe-3" href="/html/dangnhap.html" style="border-radius: 20px;"><i class="bi bi-box-arrow-in-left"
+                    style="font-size:xx-large; color: #000000;"></i></a>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid p-0">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                    aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center align-items-center flex-column"
+                    id="navbarTogglerDemo01">
+                    <ul class="listitem d-flex justify-content-center align-items-center flex-column flex-md-row w-100 px-0 m-0 mt-md-3 mt-0"
+                        style="list-style: none; background-color: #2C2E3E;">
+                        <li class="navbaritem mb-md-0 fw-semibold  py-4 px-5" style="font-size:medium;color: whitesmoke;"><a
+                                class="narbar-iteminfo" href="/index.html">TRANG
+                                CHỦ</a> </li>
+                        <li class="navbaritem mb-md-0 fw-semibold  py-4 px-5" style="font-size:medium;color: whitesmoke;">
+                            <a class="narbar-iteminfo" href="/html/main-sp.html">SẢN PHẨM</a>
+                        </li>
+                        <li class="navbaritem mb-md-0 fw-semibold  py-4 px-5" style="font-size:medium;color: whitesmoke;">
+                            <a class="narbar-iteminfo" href="/index.html#smell-mark">NHÓM HƯƠNG</a>
+                        </li>
+                        <li class="navbaritem mb-md-0 fw-semibold  py-4 px-5" style="font-size:medium;color: whitesmoke;">
+                            <a class="narbar-iteminfo" href="/index.html#brand-mark">THƯƠNG HIỆU</a>
+                        </li>
+                        <li class="navbaritem mb-md-0 fw-semibold  py-4 px-5" style="font-size:medium;color: whitesmoke;">
+                            <a class="narbar-iteminfo" href="/index.html#main-mark">VỀ LA PARFUMANIA</a>
+                        <li class="navbaritem mb-md-0 fw-semibold  py-4 px-5" style="font-size:medium;color: whitesmoke;">
+                            <a class="narbar-iteminfo" href="/index.html#blog-mark">BLOGS</a>
+                        </li>
+                        <li class="navbaritem mb-md-0 fw-semibold  py-4 px-5" style="font-size:medium;color: whitesmoke;">
+                            <a class="narbar-iteminfo" href="/html/contact-form.html">LIÊN HỆ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="home mx-auto ">
+            <div class="imghome">
+                <div class="content">
+                    <div class="brand">
+                        <div class="text-brand">
+                            <h3>LA PARFUMANIA</h3>
+                            <h1>PERFUMES GALLERY</h1>
+                        </div>
+                        <div class="mt-4">
+                            <button type="button" class="btn btn-outline-secondary"><a href="#main-mark" style="text-decoration: none; color: #000000;">Tìm Hiểu Thêm</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main" id="main-mark">
+            <div class="logan mx-auto">
+                VỀ LA PARFUMANIA
+            </div>
+            <div class="text-1 p-2 d-flex justify-content-center">
+                <p class="text-content" style="text-align: justify;">La Parfumania cung cấp đa dạng các thương hiệu nước hoa, từ designer cho đến niche. Cho dù bạn đang tìm
+                kiếm
+                một mùi hương tươi mới, mát mẻ, tràn đầy năng lượng hay dịu dàng, ấm áp, ngọt ngào, từ hương trái cây,
+                hương
+                hoa cho đến hương gỗ, hương da thuộc, La Parfumania đều có một mùi hương phù hợp với bạn.
+                <br /> <br />
+                Tại La Parfumania, chúng tôi luôn tin rằng, mỗi mùi hương là một cuộc hành trình. Chúng lặn sâu vào quá
+                khứ,
+                dạo chơi trong kí ức. Chúng khám phá những chân trời đầy cảm hứng và chưa được biết tới, và sẵn sàng cho
+                những cuộc phiêu lưu mới.
+            </p>
+            </div>
+            <div class="text-2"></div>
+            <div class="d-flex justify-content-center align-items-center ">
+                <button class="btn btn-dark" id="content-main" type="button" role="button" style="padding: 6px 12px;">ĐỌC THÊM</button>
+            </div>
+        </div>
+        <div class="listintro">
+            <div class="d-flex justify-content-center align-items-center flex-column">
+                <div class="logan d-flex justify-content-center">
+                    SẢN PHẨM BÁN CHẠY
+                </div>
+                <div class="logan-list d-flex justify-content-center">
+                    <button id="buttonMan" style="border: none ;background: none;">
+                        <p id="man" class="fw-semibold me-5 selected px-4"
+                            style="font-size:larger; text-decoration: none; color: #AFAFAF;">NƯỚC HOA NAM</p>
+                    </button>
+                    <button id="buttonWonman" style="border: none ; background: none;">
+                        <p class="fw-semibold px-4" id="woman"
+                            style="font-size:larger; text-decoration: none; color: #AFAFAF;">NƯỚC HOA NỮ</p>
+                    </button>
+                </div>
+            </div>
+            <div id="manlist">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                    <div class="carousel-inner pt-4 pb-4">
+                        <div class="carousel-item d-flex align-items-center active ">
+                            <div class="card CardItem pt-3" style="width: 302px; height: 516px;margin-right:24px !important">
+                                <img src="/images/product/perfume1.png" class="card-img-top ImgItem">
+                                <div class="card-body">
+                                    <div class="d-flex flex-column ">
+                                        <h5 class="NameItem" style="text-align: center;">CHRISTIAN DIOR<h5>
+                                                <p class="FullName"
+                                                    style="font-size:medium ; color: #BE9447; text-align: center;">
+                                                    Homme
+                                                    Intense</p>
+                                    </div>
+                                    <h3 class="card-text text-center fw-semibold PriceItem ">2,800,000đ</h3>
+                                    <a href="#" class="btn w-100 btn-light addToCart"> <i class="bi bi-cart3"></i> Thêm vào giỏ
+                                        hàng</a>
+                                </div>
+                            </div>
+                            <div class="card CardItem pt-3" style="width: 302px; height: 516px;margin-right:24px !important">
+                                <img src="/images/product/perfume2.png" class="card-img-top ImgItem">
+                                <div class="card-body">
+                                    <div class="d-flex flex-column align-items-center">
+                                        <h5 class="NameItem">DOLCE & GABBANA<h5>
+                                                <p class="FullName"
+                                                    style="font-size:medium ; color: #BE9447; text-align: center;">The
+                                                    One Eau de Parfum for Men</p>
+                                    </div>
+                                    <h3 class="card-text text-center fw-semibold PriceItem">2,660,000đ</h3>
+                                    <a href="#" class="btn w-100 btn-light addToCart"> <i class="bi bi-cart3"></i> Thêm vào giỏ
+                                        hàng</a>
+                                </div>
+                            </div>
+                            <div class="card CardItem pt-3" style="width: 302px; height: 516px;margin-right:24px !important">
+                                <img src="/images/product/perfume3.png" class="card-img-top ImgItem">
+                                <div class="card-body">
+                                    <div class="d-flex flex-column align-items-center">
+                                        <h5 class="NameItem">CHANEL<h5>
+                                                <p class="FullName"
+                                                    style="font-size:medium ; color: #BE9447; text-align: center;">
+                                                    Bleu
+                                                    De Chanel Eau de Parfum</p>
+                                    </div>
+                                    <h3 class="card-text text-center fw-semibold PriceItem">2,450,000đ</h3>
+                                    <a href="#" class="btn w-100 btn-light addToCart"> <i class="bi bi-cart3"></i> Thêm vào giỏ
+                                        hàng</a>
+                                </div>
+                            </div>
+                            <div class="card CardItem pt-3" style="width: 302px; height: 516px;">
+                                <img src="/images/product/perfume4.png" class="card-img-top ImgItem">
+                                <div class="card-body">
+                                    <div class="d-flex flex-column align-items-center">
+                                        <h5 class="NameItem">GIORGIO ARMANI<h5>
+                                                <p class="FullName"
+                                                    style="font-size:medium ; color: #BE9447; text-align: center;">
+                                                    Acqua di Gio Profumo</p>
+                                    </div>
+                                    <h3 class="card-text text-center fw-semibold PriceItem">3,200,000đ</h3>
+                                    <a href="#" class="btn w-100 btn-light addToCart"> <i class="bi bi-cart3"></i> Thêm vào giỏ
+                                        hàng</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item d-flex align-items-center">
+                            <div class="card CardItem pt-3" style="width: 302px; height: 516px;margin-right:24px !important">
+                                <img src="/images/product/perfume5.png" class="card-img-top ImgItem">
+                                <div class="card-body">
+                                    <div class="d-flex flex-column align-items-center">
+                                        <h5 class="NameItem">CREED<h5>
+                                                <p class="FullName"
+                                                    style="font-size:medium ; color: #BE9447; text-align: center;">
+                                                    Aventus</p>
+                                    </div>
+                                    <h3 class="card-text text-center fw-semibold PriceItem">6,500,000đ</h3>
+                                    <a href="#" class="btn w-100 btn-light addToCart"> <i class="bi bi-cart3"></i> Thêm vào giỏ
+                                        hàng</a>
+                                </div>
+                            </div>
+                            <div class="card CardItem pt-3" style="width: 302px; height: 516px;margin-right:24px !important">
+                                <img src="/images/product/perfume6.png" class="card-img-top ImgItem">
+                                <div class="card-body">
+                                    <div class="d-flex flex-column align-items-center">
+                                        <h5 class="NameItem">ARMAF<h5>
+                                                <p class="FullName"
+                                                    style="font-size:medium ; color: #BE9447; text-align: center;">
+                                                    Club
+                                                    de Nuit Intense Man</p>
+                                    </div>
+                                    <h3 class="card-text text-center fw-semibold PriceItem">1,180,000đ</h3>
+                                    <a href="#" class="btn w-100 btn-light addToCart"> <i class="bi bi-cart3"></i> Thêm vào giỏ
+                                        hàng</a>
+                                </div>
+                            </div>
+                            <div class="card CardItem pt-3" style="width: 302px; height: 516px;margin-right:24px !important">
+                                <img src="/images/product/perfume7.png" class="card-img-top ImgItem">
+                                <div class="card-body">
+                                    <div class="d-flex flex-column align-items-center">
+                                        <h5 class="NameItem">YVES SAINT LAURENT<h5>
+                                                <p class="FullName"
+                                                    style="font-size:medium ; color: #BE9447; text-align: center;">La
+                                                    Nuit De L'Homme</p>
+                                    </div>
+                                    <h3 class="card-text text-center fw-semibold PriceItem">2,650,000đ</h3>
+                                    <a href="#" class="btn w-100 btn-light addToCart"> <i class="bi bi-cart3"></i> Thêm vào giỏ
+                                        hàng</a>
+                                </div>
+                            </div>
+                            <div class="card CardItem pt-3" style="width: 302px; height: 516px;">
+                                <img src="/images/product/perfume8.png" class="card-img-top ImgItem">
+                                <div class="card-body">
+                                    <div class="d-flex flex-column align-items-center">
+                                        <h5 class="NameItem">BVLGARI<h5>
+                                                <p class="FullName"
+                                                    style="font-size:medium ; color: #BE9447; text-align: center;">
+
+                                                    Aqva Pour Homme Marine</p>
+                                    </div>
+                                    <h3 class="card-text text-center fw-semibold PriceItem">1,650,000đ</h3>
+                                    <a href="#" class="btn w-100 btn-light addToCart"> <i class="bi bi-cart3"></i> Thêm vào giỏ
+                                        hàng</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item d-flex align-items-center">
+                            <div class="card CardItem pt-3" style="width: 302px; height: 516px; margin-right:24px !important ;">
+                                <img src="/images/product/perfume9.png" class="card-img-top ImgItem">
+                                <div class="card-body">
+                                    <div class="d-flex flex-column align-items-center">
+                                        <h5 class="NameItem">CALVIN KLEIN<h5>
+                                                <p class="FullName"
+                                                    style="font-size:medium ; color: #BE9447; text-align: center;">
+                                                    Everyone
+                                                </p>
+                                    </div>
+                                    <h3 class="card-text text-center fw-semibold PriceItem">2,800,000đ</h3>
+                                    <a href="#" class="btn w-100 btn-light addToCart"> <i class="bi bi-cart3"></i> Thêm vào giỏ
+                                        hàng</a>
+                                </div>
+                            </div>
+                            <div class="card CardItem pt-3" style="width: 302px; height: 516px;  margin-right:24px !important;">
+                                <img src="/images/product/perfume10.png" class="card-img-top ImgItem">
+                                <div class="card-body">
+                                    <div class="d-flex flex-column align-items-center">
+                                        <h5 class="NameItem">VIKTOR & ROLF<h5>
+                                                <p class="FullName"
+                                                    style="font-size:medium ; color: #BE9447; text-align: center;">
+                                                    Spicebomb For Men</p>
+                                    </div>
+                                    <h3 class="card-text text-center fw-semibold PriceItem">2,450,000đ</h3>
+                                    <a href="#" class="btn w-100 btn-light addToCart"> <i class="bi bi-cart3"></i> Thêm vào giỏ
+                                        hàng</a>
+                                </div>
+                            </div>
+                            <div class="card CardItem pt-3" style="width: 302px; height: 516px; margin-right:24px !important ;">
+                                <img src="/images/product/perfume11.png" class="card-img-top ImgItem">
+                                <div class="card-body">
+                                    <div class="d-flex flex-column align-items-center">
+                                        <h5 class="NameItem">PACO RABANNE<h5>
+                                                <p class="FullName"
+                                                    style="font-size:medium ; color: #BE9447; text-align: center;">
+                                                    Phantom</p>
+                                    </div>
+                                    <h3 class="card-text text-center fw-semibold PriceItem">2,150,000đ</h3>
+                                    <a href="#" class="btn w-100 btn-light addToCart"> <i class="bi bi-cart3"></i> Thêm vào giỏ
+                                        hàng</a>
+                                </div>
+                            </div>
+                            <div class="card CardItem pt-3" style="width: 302px; height: 516px;">
+                                <img src="/images/product/perfume12.png" class="card-img-top ImgItem">
+                                <div class="card-body">
+                                    <div class="d-flex flex-column align-items-center">
+                                        <h5 class="NameItem">JEAN PAUL GAULTIER<h5>
+                                                <p class="FullName"
+                                                    style="font-size:medium ; color: #BE9447; text-align: center;">Le
+                                                    Beau Le Parfum</p>
+                                    </div>
+                                    <h3 class="card-text text-center fw-semibold PriceItem">3,100,000đ</h3>
+                                    <a href="#" class="btn w-100 btn-light addToCart"> <i class="bi bi-cart3"></i> Thêm vào giỏ
+                                        hàng</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"  style="margin-right: 150px; background-color: rgb(154, 154, 154);border-radius: 50%;"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"  style="margin-left: 150px;background-color: rgb(154, 154, 154); border-radius: 50%;"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="button1 d-flex justify-content-center align-items-center pb-5 pt-4"><a class="btn btn-dark"
+                    href="/html/main-sp.html" role="button">XEM THÊM SẢN PHẨM</a>
+            </div>
+        </div>
+        <div class="smelllist" id="smell-mark">
+            <div class="logan mx-auto" style="margin-top: 80px;">
+                NHÓM HƯƠNG CHỦ ĐẠO
+            </div>
+            <div class="container p-0" style="margin: 0px 80px !important;">
+                <div class="row g-2  p-0">
+                    <div class="col-8 pe-2 imgitem" style="width: fit-content;">
+                        <img src="/images/smell/ho_phach.png" alt="">
+                    </div>
+                    <div class="col-4 ps-2 imgitem" style="width: fit-content;">
+                        <img src="/images/smell/chypre2.png" alt="">
+                    </div>
+                </div>
+
+                <div class="row g-2 mt-2 ">
+                    <div class="col-4 pe-2 imgitem" style="width: fit-content;">
+                        <img src="/images/smell/cam3.png" alt="">
+                    </div>
+                    <div class="col-4 px-2 imgitem" style="width: fit-content;">
+                        <img src="/images/smell/da4.png" alt="">
+                    </div>
+                    <div class="col-4 ps-2 imgitem" style="width: fit-content;">
+                        <img src="/images/smell/hoa5.png" alt="">
+                    </div>
+                </div>
+
+                <div class="row g-2 mt-2 mb-2 p-0">
+                    <div class="col-4 pe-2 imgitem" style="width: fit-content;">
+                        <img src="/images/smell/go6.png" alt="">
+                    </div>
+                    <div class="col-8 ps-2 imgitem" style="width: fit-content;">
+                        <img src="/images/smell/nbgta7.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="brandlist" id="brand-mark">
+            <div class="logan mx-auto">
+                THƯƠNG HIỆU NỔI BẬT
+            </div>
+            <div class="d-flex flex-column brand-main">
+                <div class="d-flex justify-content-center flex-wrap">
+                    <div class="rowitem d-flex justify-content-center">
+                        <img src="/images/brand/brand1.png">
+                    </div>
+                    <div class="rowitem d-flex justify-content-center">
+                        <img src="/images/brand/brand2.png">
+                    </div>
+                    <div class="rowitem d-flex justify-content-center">
+                        <img src="/images/brand/brand3.png">
+                    </div>
+                    <div class="rowitem d-flex justify-content-center">
+                        <img src="/images/brand/brand4.png">
+                    </div>
+                    <div class="rowitem d-flex justify-content-center">
+                        <img src="/images/brand/brand5.png">
+                    </div>
+                    <div class="rowitem d-flex justify-content-center">
+                        <img src="/images/brand/brand6.png">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center flex-wrap">
+                    <div class="rowitem d-flex justify-content-center">
+                        <img src="/images/brand/brand7.png">
+                    </div>
+                    <div class="rowitem d-flex justify-content-center">
+                        <img src="/images/brand/brand8.png">
+                    </div>
+                    <div class="rowitem d-flex justify-content-center">
+                        <img src="/images/brand/brand9.png">
+                    </div>
+                    <div class="rowitem d-flex justify-content-center">
+                        <img src="/images/brand/brand10.png">
+                    </div>
+                    <div class="rowitem d-flex justify-content-center">
+                        <img src="/images/brand/brand11.png">
+                    </div>
+                    <div class="rowitem d-flex justify-content-center">
+                        <img src="/images/brand/brand12.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bloglist" id="blog-mark">
+            <div class="logan mx-auto" style="margin-top: 80px;">
+                BLOG MỚI NHẤT
+            </div>
+            <div class="blog-main">
+                <div class="d-flex" style="margin-bottom: 48px;">
+                    <div class="blog1">
+                        <div class="mb-4">
+                            <h3> Giorgio Armani Light di Gioia - Scent of Gioia</h3>
+                        </div>
+                        <div>
+                            <p>Light di Gioia is light yellow and luminescent. During the development of the fragrance,
+                                sunlight is depicted with white florality layered on gentle and precious woody notes and
+                                a
+                                creamy musky trail.</p>
+                        </div>
+                    </div>
+                    <div class="imgblog">
+                        <img src="/images/blog/blog1.png">
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="imgblog">
+                        <img src="/images/blog/blog2.png">
+                    </div>
+                    <div class="blog2">
+                        <div class="mb-4">
+                            <h3>Armani Sì Fiori - Express your true nature</h3>
+                        </div>
+                        <div>
+                            <p>The composition reinterprets the chypre theme of the original. Effervescent and fresh
+                                notes in the top retain the signature black currant note and mix it with mandarin.
+                                Vanilla and musk form the soft base of the perfume.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="reasonlist">
+            <div class="logan mx-auto" style="margin-top: 80px;">
+                TẠI SAO CHỌN LA PARFUMANIA
+            </div>
+            <div class="d-flex justify-content-evenly flex-wrap">
+                <div class="d-flex flex-column justify-content-center align-items-center"
+                    style="width: 224px;height: 186px;">
+                    <img src="/images/reason/reason1.png">
+                    <div class="reason">
+                        <h5>Sản phẩm chính hãng</h5>
+                        <p>Sản phẩm nước hoa được mua trực tiếp tại Sephora và store chính hãng ở Pháp và Ý</p>
+                    </div>
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-center"
+                    style="width: 224px;height: 186px;">
+                    <img src="/images/reason/reason2.png">
+                    <div class="reason">
+                        <h5>Miễn phí bọc quà</h5>
+                        <p>Miễn phí hộp quà và thiệp với đơn hàng trên 800,000VND cho tất cả các khách hàng</p>
+                    </div>
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-center"
+                    style="width: 224px;height: 186px;">
+                    <img src="/images/reason/reason3.png">
+                    <div class="reason">
+                        <h5>Free sample</h5>
+                        <p>Tặng kèm một sample chính hãng với các đơn hàng có giá trị từ 2,000,000VND trở lên</p>
+                    </div>
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-center"
+                    style="width: 224px;height: 186px;">
+                    <img src="/images/reason/reason4.png">
+                    <div class="reason">
+                        <h5>Ưu đãi thành viên</h5>
+                        <p>Thành viên vàng sẽ được giảm 5%, thành viên bạc được giảm 3% đối với tất cả các đơn hàng</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="imglist">
+            <div class="logan mx-auto">
+                HÌNH ẢNH TỪ KHÁCH HÀNG
+            </div>
+            <div class="customerimg d-flex justify-content-center flex-wrap">
+                <img src="/images/feedback/feedback1.png">
+                <img src="/images/feedback/feedback2.png">
+                <img src="/images/feedback/feedback3.png">
+                <img src="/images/feedback/feedback4.png">
+                <img src="/images/feedback/feedback5.png">
+            </div>
+        </div>
+        <div class="footer-bar">
+            <div class="footerinfo">
+                <div class="discount d-flex justify-content-evenly align-items-center">
+                    <div class="voucher d-flex justify-content-center flex-column align-items-center ">
+                        <h5> NHẬN </h5>
+                        <h1 class="fw-bolder" style="font-size: xxx-large;">10%</h1>
+                        <h5>VOUCHER </h5>
+                    </div>
+                    <div class="reg">
+                        <h4> Đăng ký nhận tin khuyến mãi </h4>
+                    </div>
+                    <form>
+                        <div class="form-group formreg">
+                            <div class="input-group">
+                                <input type="email" class="form-control" id="emailInput"
+                                    placeholder="Nhập địa chỉ email..." pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                                    required>
+                                <button type="submit" class="btn"><i class="bi bi-send-fill"
+                                        style="color: #8D7665;"></i></button>
+                            </div>
+                            <div class="invalid-feedback">
+                                Vui lòng nhập một địa chỉ email hợp lệ.
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="moreinfo">
+                    <div class="listinfo d-flex justify-content-evenly">
+                        <div style="color: white;">
+                            <h4 class="mb-4">THÔNG TIN LIÊN HỆ</h4>
+                            <div>
+                                <p style="color: #C0C0C5;"><i class="bi bi-geo-alt-fill me-2"></i>CS1: 15 Trần Phú, Hoàn
+                                    Kiếm, HN</p>
+                                <p style="color: #C0C0C5;"><i class="bi bi-geo-alt-fill me-2"></i>CS2: 20 Tố Hữu, Hà
+                                    Đông, HN</p>
+                                <p style="color: #C0C0C5;"><i class="bi bi-phone-fill me-2"></i>Hotline: 0123456789</p>
+                                <p style="color: #C0C0C5;"><i class="bi bi-envelope-fill me-2"></i>Email:
+                                    lascent.cs@gmail.com</p>
+                            </div>
+                        </div>
+                        <div style="color: white;">
+                            <h4 class="mb-4">THỜI GIAN LÀM VIỆC</h4>
+                            <div>
+                                <p style="color: #C0C0C5;">Thứ 2 - Thứ 6: 8AM - 11PM</p>
+                                <p style="color: #C0C0C5;">Thứ 7, Chủ Nhật: 9AM - 9PM</p>
+                                <p style="color: #C0C0C5;">Nghỉ các ngày lễ, Tết</p>
+                            </div>
+                        </div>
+                        <div style="color: white;">
+                            <h4 class="mb-4">DỊCH VỤ KHÁCH HÀNG</h4>
+                            <div>
+                                <p style="color: #C0C0C5;">Câu hỏi thường gặp</p>
+                                <p style="color: #C0C0C5;">Hướng dẫn mua hàng online</p>
+                                <p style="color: #C0C0C5;">Chính sách bảo mật</p>
+                                <p style="color: #C0C0C5;">Liên hệ & góp ý</p>
+                            </div>
+                        </div>
+                        <div style="color: white;">
+                            <h4 class="mb-4">CHÍNH SÁCH MUA HÀNG</h4>
+                            <div>
+                                <p style="color: #C0C0C5;">Chính sách bảo hành, đổi trả</p>
+                                <p style="color: #C0C0C5;">Chính sách giao hàng, hoàn hủy</p>
+                                <p style="color: #C0C0C5;">Ưu đãi thẻ thành viên</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyrightspace d-flex justify-content-center align-items-center">
+                <p class="m-0">All rights reserved | © La Parfumania Perfume Gallery 2021</p>
+            </div>
+        </div>
+        <a href="#" id="back-to-top"><i class="bi bi-arrow-up-square"></i></a>
+    </div>
+    <script src="/index.js"></script>
+    <script src="/js/logout.js"></script>
+</body>
+
+</html>

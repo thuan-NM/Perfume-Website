@@ -1,0 +1,211 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f7f8f9;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+}
+
+.auth-container {
+    max-width: 750px;
+    max-height: 600px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 1px 2px 8px 8px #ccc3;
+    display: flex;
+    margin-top: 4rem;
+    overflow: hidden;
+}
+
+.auth-action {
+    flex: 2;
+}
+
+.auth-form-outer {
+    padding: 2rem 4rem;
+    display: block;
+}
+
+h2.auth-form-title {
+    text-align: center;
+    color: #000000;
+    font-size: 1.7rem;
+}
+
+.auth-form-outer input {
+    border: 1px solid #44556385;
+    margin-bottom: 1rem;
+    width: 100%;
+    padding: 13px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background: #fdfdfd7a;
+}
+
+.auth-form-outer input:hover,
+.auth-form-outer input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.auth-form-outer input:focus {
+    background-color: #fff;
+    border: 1px solid #312929;
+}
+
+
+input.auth-form-input::placeholder {
+    color: #0f82dd4d;
+}
+
+
+
+  input[type="checkbox"] {
+    display: none;
+}
+  label input[type="checkbox"] ~ i.fa.fa-square-o{
+      color: #7853fd;    display: inline;
+  }
+  label input[type="checkbox"] ~ i.fa.fa-check-square-o{
+      display: none;
+  }
+  label input[type="checkbox"]:checked ~ i.fa.fa-square-o{
+      display: none;
+  }
+  label input[type="checkbox"]:checked ~ i.fa.fa-check-square-o{
+      color: #7853fd;    display: inline;
+  }
+  label:hover input[type="checkbox"] ~ i.fa {
+  color: #7853fd;
+  }
+  
+  div[data-toggle="buttons"] label.active{
+      color: #7853fd;
+  }
+  
+.wrapper a {
+    text-decoration: none;
+    color: #7853fd;
+}
+
+a.auth-btn-direct {
+    color: black;
+    flex: 1;
+    border: 1px solid #000000;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+input.auth-submit {
+    border: solid 1px black;
+    width: auto;
+    color: #000000;
+    font-weight: 500;
+    border-radius: 5px!important;
+    flex: 1;
+    cursor: pointer;
+    margin: 0;
+}
+
+input.auth-submit:focus {
+    background: #636268;
+    color: #fff;
+}
+
+input.auth-submit:hover {
+    background-color: rgb(144, 143, 143);
+    color: #000000;
+}
+.auth-btn-direct:hover {
+    background-color: rgb(144, 143, 143);
+    color: #000000;
+}
+
+
+.auth-external-list ul li a:hover {
+    color: #3251ff;
+    border-color: #000000;
+}
+
+.footer-action {
+    display: flex;
+    width: 100%;
+    margin-top: 2rem;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.auth-external-list ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.auth-external-list ul li {
+    float: left;
+}
+
+.auth-external-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.auth-external-list ul li a {
+    width: 26px;
+    height: 26px;
+    margin: 7px;
+    display: block;
+    text-align: center;
+    line-height: 27px;
+    border-radius: 50%;
+    border: 1px solid #00000078;
+    color: #555;
+}
+
+p.auth-sgt {
+    text-align: center;
+    color: #8a0505;
+}
+
+.auth-forgot-password a {
+    text-align: center;
+    display: block;
+    border-top: 1px dashed #d6ee0033;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+
+.input-icon {
+    position: relative;
+ }
+
+.input-icon input {
+   padding-right: 4rem;
+}
+
+.input-icon i {
+    position: absolute;
+    top: 38%;
+    right: 1.2rem;
+    transform: translateY(-50%);
+    color: #020b33b5;
+    cursor: pointer;
+}
+.input-icon input[type="password"]::-ms-reveal,
+.input-icon input[type="password"]::-ms-clear {
+  display: none;
+}
+
+.input-icon input[type="password"]::-webkit-contacts-auto-fill-button,
+.input-icon input[type="password"]::-webkit-credentials-auto-fill-button {
+  display: none !important;
+}
+
+.input-icon input[type="password"]::-webkit-eye,
+.input-icon input[type="password"]::-webkit-search-cancel-button {
+  display: none !important;
+}
